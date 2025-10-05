@@ -1,0 +1,39 @@
+# MQ3 Alcohol Detection System using Arduino UNO 🚗
+
+A simple Arduino-based project that detects alcohol presence using an MQ3 sensor and triggers buzzer and LED alerts.  
+Displays live readings and warning messages on an LCD display.
+
+---
+
+## 🧰 Components
+- Arduino UNO
+- MQ3 Alcohol Sensor
+- 16x2 LCD Display
+- Buzzer
+- LED
+- Jumper wires, Breadboard
+
+---
+
+## ⚙️ Circuit Connections
+| Component | Arduino Pin | Description |
+|------------|-------------|-------------|
+| MQ3 Sensor | A0 | Analog Output |
+| Buzzer | D8 | Alert Sound |
+| LED | D9 | Warning Light |
+| LCD 16x2 | RS=12, E=11, D4=5, D5=4, D6=3, D7=2 | Display |
+
+---
+
+## 🧠 Working
+- MQ3 sensor detects ethanol concentration.
+- When sensor output > threshold:
+  - LCD displays “ALCOHOL DETECTED”
+  - Buzzer and LED turn ON.
+- When no alcohol is detected:
+  - LCD shows “Safe: No Alcohol”.
+
+---
+
+## 📊 Output Example
+**LCD Display**
